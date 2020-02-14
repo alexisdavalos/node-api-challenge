@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
                 actionModel.insert(req.body)
                     .then(action => {
                         console.log(action);
-                        res.status(200).json({ message: "Success", data: [{ ...action }] })
+                        res.status(200).json({ message: "Success", data: { ...action } })
                     })
                     .catch(error => {
                         // log error to database

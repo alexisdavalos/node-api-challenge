@@ -33,7 +33,7 @@ const Post = (props) =>{
             <button onClick={(e) => handleUpdate(e)}>Update</button>
             <div className='userPosts'>
                 {(userPosts) ?
-                userPosts.map(post => (
+                userPosts[0].actions.map(post => (
                     <div key={post.id}>
                         <h3>Action Names:</h3>
                         <li>{post.description}</li>
