@@ -1,0 +1,137 @@
+body{
+  background: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.hostbaby.com%2Fwp-content%2Fuploads%2F2013%2F07%2Fscuffedstatic_blue1400x900.jpg&f=1&nofb=1');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.App {
+  text-align: center;
+  width:100%;
+  background: #000000a8;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  margin: 0 auto;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  max-width:1200px;
+  .Box{
+    display:flex;
+    justify-content: center;
+    form{
+      margin: 10%;
+      width:100%;
+      input{
+        width:100%;
+      }
+    }
+  }
+}
+
+.App-Wrapper{
+  margin: 0 auto;
+  padding: 2%;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New Styles */
+.usersWrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+  .user{
+    width:33%;
+    margin:1%;
+    font-size:1.2rem;
+    background: #131619;
+    padding: 2.5%;
+    border-radius:20px;
+      button{
+        width:100px;
+        border: none;
+        background: #0c1216;
+        padding: 5%;
+        margin:1%;
+        color:white;
+        font-weight:600;
+        border-radius: 10px;
+        cursor:pointer;
+        text-transform: uppercase;
+      }
+      .deleteButton{
+        background:#2a0c0c;
+      }
+  }
+}
+
+form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  textarea{
+    padding:2%;
+    border: none;
+    border-radius: 5px;
+    width:95%;
+    height:100px;
+  }
+  select{
+    padding:2%;
+    border: none;
+    border-radius:15px;
+    width:100%;
+  }
+  input{
+    padding:2% 0%;
+    border: none;
+    border-radius:15px;
+  }
+  label{
+    float:left;
+    text-align: left;
+    width:100%;
+    font-size:1rem;
+    margin:1%;
+  }
+  button{
+    border: none;
+    margin: 10%;
+    padding: 2%;
+    border-radius: 5px;
+    width: 100px;
+    background: #333333;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: -1px 1px 7px 0px #000000b5;
+}
+
+}
