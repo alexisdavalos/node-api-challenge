@@ -3,7 +3,7 @@ const helmet = require('helmet');
 const cors = require('cors')
 const server = express();
 //import routes
-
+const projectRouter = require('./routers/projectRouter.js')
 //import database
 
 
@@ -13,7 +13,7 @@ server.use(cors());
 server.use(helmet());
 
 // routes - endpoints
-
+server.use("/api/projects", logger, projectRouter)
 
 // default base url http://localhost:5000 from index.js
 server.get('/', logger,  (req, res) => {
