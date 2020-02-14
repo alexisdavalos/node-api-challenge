@@ -6,7 +6,7 @@ const router = express.Router();
 //this route for GET /api/projects
 router.get('/', (req, res) => {
     projectModel.get().then(projects =>{
-      res.status(200).json({message: "Success", data: [{...projects}]})
+      res.status(200).json({message: "Success", data: [...projects]})
     })
     .catch(error => {
       // log error to database
