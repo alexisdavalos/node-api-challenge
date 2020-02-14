@@ -2,8 +2,9 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors')
 const server = express();
-//import routes
+//import routers
 const projectRouter = require('./routers/projectRouter.js')
+const actionRouter = require('./routers/actionsRouter.js')
 //import database
 
 
@@ -12,8 +13,9 @@ server.use(express.json());
 server.use(cors());
 server.use(helmet());
 
-// routes - endpoints
+// use routers - routes - endpoints / pass middleware
 server.use("/api/projects", logger, projectRouter)
+server.use("/api/actions", logger, actionRouter)
 
 // default base url http://localhost:5000 from index.js
 server.get('/', logger,  (req, res) => {
